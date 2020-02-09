@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const searchable = require('mongoose-regex-search');
 
 const exampleSchema = new mongoose.Schema({
 	example: { type: String, searchable: true },

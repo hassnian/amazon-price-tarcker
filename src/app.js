@@ -3,13 +3,16 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const exampleRouter = require('./routers/example.router');
-
+const AmazonTracking = require('./services/AmazonTracking')
 const app = express();
 const port = 3000;
 
 
 dotenv.config();
-mongoose.connect(process.env.MONGO_DB_NAME, { useUnifiedTopology: true, useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI, { useUnifiedTopology: true, useNewUrlParser: true });
+
+const amazonTracking = new AmazonTracking(process.env.TIME)
+
 
 // cors
 app.use((req, res, next) => {
@@ -23,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // routes
-app.use('/', exampleRouter);
+/*app.use('/', exampleRouter);*/
 
 app.listen(port, (err) => {
 	if (err) {
@@ -31,3 +34,7 @@ app.listen(port, (err) => {
 	}
 	return console.log(`server is listening on ${port}`);
 });
+
+
+
+amazonTracking.checkProducts()

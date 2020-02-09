@@ -3,4 +3,29 @@
     "price": 650,
     "productName" : "BenQ EX3501R,"
 
-}]
+},
+
+{
+    "amazonUrl": "https://www.amazon.es/Call-Duty-Warfare-Edici%C3%B3n-Exclusiva/dp/B07SG6W6D2/ref=lp_15909098031_1_1?s=videogames&ie=UTF8&qid=1581249267&sr=1-1",
+    "price": 40,
+    "productName" : "Call of Duty: Modern Warfare"
+
+},
+
+{
+    "amazonUrl": "https://www.amazon.es/BenQ-GL2580H-Monitor-Eye-care-met%C3%A1lico/dp/B073NTJHYY/ref=sr_1_7?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=monitor&qid=1581252787&sr=8-7",
+    "price": 120,
+    "productName" : "BenQ GL2580H -"
+
+}
+,
+{
+    "amazonUrl": "https://www.amazon.es/dp/B07Q184K56/ref=psdc_937992031_t2_B073NTJHYY",
+    "price": 160 ,
+    "productName" : "LG 24GL600F-B "
+
+}
+
+
+
+]

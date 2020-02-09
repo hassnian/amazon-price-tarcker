@@ -23,6 +23,7 @@
     "moment": "^2.24.0",
     "mongoose": "^5.8.9",
     "mongoose-regex-search": "^0.8.14",
-    "puppeteer": "^2.1.1"
+    "puppeteer": "^2.1.1",
+    "twilio": "^3.39.4"
   }
 }
